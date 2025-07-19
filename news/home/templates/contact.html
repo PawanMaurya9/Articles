@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block title %}
+contact us
+{% endblock %}
+{% block name %}
+<!-- <h1>Pawan Maurya 1VE20IS030</h1> -->
+<section id="contact" class="py-5 bg-dark text-light">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center">
+          <h2 class="mb-4">Get in Touch</h2>
+          <p class="lead mb-5">
+            Have a question or want to work together? Feel free to reach out to me!
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <form>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea class="form-control" id="message" rows="5" placeholder="Enter your message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-light mt-3">Send Message</button>
+          </form>
+        </div>
+        <div class="col-md-6 text-center">
+          <h4>Contact Details</h4>
+          <p class="lead">
+            <strong>Pawan Maurya</strong><br>
+            Django Developer<br>
+            <a href="mailto:your.email@example.com" class="text-light">pm08447077@gmail.com</a><br>
+            <a href="tel:+1234567890" class="text-light">7275775087</a>
+          </p>
+          <div class="mt-4">
+            <a href="https://github.com/yourusername" class="text-light mx-3" target="_blank">GitHub
+              <i class="fab fa-github fa-2x"></i>
+            </a>
+            <a href="https://linkedin.com/in/yourusername" class="text-light mx-3" target="_blank">LinkedIn
+              <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+{% endblock %}

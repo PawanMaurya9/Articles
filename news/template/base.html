@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    {% include 'header.html' %}
+    {% if c %}
+    <marquee class="m10" behavior="" direction="" scrollamount="15px" style="height: 60px;">New articles 2024 Uttar Pradesh</marquee>
+    {% endif %}
+    {% block name %}
+    {% endblock %}
+    {% include 'footer.html' %}
+    
+
+
+
+    <Script src="{% static 'article.js' %}"></Script>
+</body>
+</html>

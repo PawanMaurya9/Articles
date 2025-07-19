@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+
+Articles
+
+{% endblock %}
+
+{% block name %}
+
+{% for i in a %}
+<h3 class="heading">{{i.id}}</h3>
+
+<div class="card">
+
+    <div class="card1">
+
+        <img id="1" src="{% static 'images/'%}{{i.id}}.jpg" alt="">
+
+    </div>
+
+    <div class="card2">
+
+        <h2>{{i.i}}{{i.title}}</h2>
+
+        <p class="p1">{{1.description}}</p>
+
+        <button><a href="{% url 'nextpage' i.id %}" class="a1">readmore..</a></button>
+
+    </div>
+
+</div>
+
+{% endfor %}
+
+{% endblock %}

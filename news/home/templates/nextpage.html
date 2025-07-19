@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %}
+
+content
+
+{% endblock %}
+
+{% block name %}
+
+<div class="card5">
+
+    <marquee class="m2" behavior="slide" direction="left" scrollamount="20px">{{e}}).{{b}}</marquee>
+
+    <div class="card7">
+
+        <p class="m3">{{a}}</p>
+
+        <div class="card14">
+
+            <button class="m6"><a href="{% url 'home1' %}">BACK TO MENU</a></button>
+
+            <button onclick="window.print()" class="m7"> PRINT</button>
+
+            <button class="m12"><a href="{% url 'page' e %}" style="color: rgb(201, 179, 179);">SPEAK GOOGLE</a></button>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

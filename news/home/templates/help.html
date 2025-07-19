@@ -1,0 +1,105 @@
+{% extends "base.html" %}
+{% block title %}
+help
+{% endblock %}
+{% block name %}
+<h1>Welcome to the help Section</h1>
+<section id="help" class="custom-help-section py-5 bg-light">
+    <div class="custom-container">
+        <div class="custom-row text-center">
+            <div class="custom-col">
+                <h2 class="custom-heading mb-4">Need Help?</h2>
+                <p class="custom-lead-text mb-5">
+                    If you have any questions or need assistance, feel free to check out the FAQs below or reach out to
+                    me directly.
+                </p>
+            </div>
+        </div>
+
+        <div class="custom-row">
+            <div class="custom-col-md-6">
+                <h4>Frequently Asked Questions</h4>
+                <div class="custom-accordion" id="faqAccordion">
+                    <div class="custom-card">
+                        <div class="custom-card-header" id="headingOne">
+                            <h5 class="custom-mb-0">
+                                <button class="custom-btn custom-btn-link" type="button" data-toggle="collapse"
+                                    data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    What services do you offer?
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseOne" class="custom-collapse show" aria-labelledby="headingOne"
+                            data-parent="#faqAccordion">
+                            <div class="custom-card-body">
+                                I offer Django web development services, including building custom web applications,
+                                APIs, and integrating third-party services.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="custom-card">
+                        <div class="custom-card-header" id="headingTwo">
+                            <h5 class="custom-mb-0">
+                                <button class="custom-btn custom-btn-link collapsed" type="button"
+                                    data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                    aria-controls="collapseTwo">
+                                    How can I contact you?
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseTwo" class="custom-collapse collapse" aria-labelledby="headingTwo"
+                            data-parent="#faqAccordion">
+                            <div class="custom-card-body">
+                                You can reach me via email at <a
+                                    href="mailto:your.email@example.com">pm08447077@gmail.com.com</a> or call me at <a
+                                    href="tel:+1234567890">+91 7275775087</a>.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="custom-card">
+                        <div class="custom-card-header" id="headingThree">
+                            <h5 class="custom-mb-0">
+                                <button class="custom-btn custom-btn-link collapsed" type="button"
+                                    data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                    aria-controls="collapseThree">
+                                    What are your rates for development services?
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseThree" class="custom-collapse collapse" aria-labelledby="headingThree"
+                            data-parent="#faqAccordion">
+                            <div class="custom-card-body">
+                                Rates depend on the project scope. Contact me with project details, and I can provide a
+                                custom quote.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="custom-col-md-6">
+                <h4>Contact Support</h4>
+                <form>
+                    <div class="custom-form-group">
+                        <label for="help-name">Name</label>
+                        <input type="text" class="custom-form-control" id="help-name" placeholder="Enter your name"
+                            required>
+                    </div>
+                    <div class="custom-form-group">
+                        <label for="help-email">Email</label>
+                        <input type="email" class="custom-form-control" id="help-email" placeholder="Enter your email"
+                            required>
+                    </div>
+                    <div class="custom-form-group">
+                        <label for="help-message">Message</label>
+                        <textarea class="custom-form-control" id="help-message" rows="4"
+                            placeholder="Describe your issue or question" required></textarea>
+                    </div>
+                    <button type="submit" class="custom-btn custom-btn-dark mt-3">Submit Request</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
